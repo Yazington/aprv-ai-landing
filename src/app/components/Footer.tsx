@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 export default function Footer() {
   return (
-    <div className="flex flex-1 w-full justify-center items-center">
-      <footer className="flex flex-col items-center p-6 text-white border-t border-gray-700 space-y-4 w-[80%] sm:w-[50%] md:w-[40%] lg:w-[30%] xl:w-[25%] 2xl:w-[18%] justify-center ">
+    <div className="flex flex-1 w-full justify-center items-center bg-gray-900">
+      <footer className="flex flex-col items-center p-6 m-6 text-white border-t border-gray-700 space-y-4 w-[80%] sm:w-[50%] md:w-[40%] lg:w-[30%] xl:w-[25%] 2xl:w-[18%] justify-center ">
         <div className="flex items-center mb-4">
           <Image
             src="/logo2.png"
