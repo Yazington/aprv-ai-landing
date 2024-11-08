@@ -26,7 +26,7 @@ const HowItWorks = () => {
   ];
 
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center gap-8 p-8 bg-gray-900 min-h-[500px]">
+    <div className="flex flex-col md:flex-row justify-center items-center gap-8 p-8 bg-gray-900">
       {steps.map((step, index) => (
         <div
           key={index}
