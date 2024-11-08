@@ -14,7 +14,7 @@ export default function Header() {
 
         // Get the section id from the href attribute
         const targetId = link.getAttribute("href")?.substring(1);
-
+        if (!targetId) return;
         // Find the section with the corresponding id
         const targetSection = document.getElementById(targetId);
 

@@ -12,7 +12,7 @@ const InteractiveBackground = () => {
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
-    const dotSize = 4;
+    // const dotSize = 4;
     const spacing = 20;
     const canvasWidth = document.documentElement.scrollWidth;
     const canvasHeight = document.documentElement.scrollHeight;
@@ -42,7 +42,7 @@ const InteractiveBackground = () => {
     ctx.fillRect(0, 0, canvas.width, canvas.height);
   }, []);
 
-  const updateDotsNearMouse = useCallback((mouseX, mouseY) => {
+  const updateDotsNearMouse = useCallback((mouseX: number, mouseY: number) => {
     const canvas = canvasRef.current;
     if (!canvas) return;
     const ctx = canvas.getContext("2d");
@@ -71,7 +71,7 @@ const InteractiveBackground = () => {
   useEffect(() => {
     initializeCanvas();
 
-    const handleMouseMove = (event) => {
+    const handleMouseMove = (event: MouseEvent) => {
       const mouseX = event.pageX;
       const mouseY = event.pageY;
       updateDotsNearMouse(mouseX, mouseY);
