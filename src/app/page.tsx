@@ -19,29 +19,29 @@ export default function Home() {
       <InteractiveBackground />
       <div className="flex flex-1 relative z-10 flex-col min-h-screen justify-center items-center">
         <Header />
-        <main className="flex flex-col justify-center items-center w-[95%] xl:w-[85%]">
+        <main className="flex flex-col flex-1 justify-center items-center w-full">
           <div className="m-4 my-32">
             <HeroSection />
           </div>
-          <div className="m-4 my-10">
+          <div className="m-4 my-10 w-full">
             <Challenges />
           </div>
           <div className="m-4 my-10">
             <Product />
           </div>
-          <div className="m-4 my-10">
+          <div className="m-4 my-10 w-full">
             <HowItWorks />
           </div>
           <div className="m-4 my-10">
             <KeyBenefits />
           </div>
-          <div className="m-4 my-10">
+          <div className="m-4 my-10 w-full">
             <FeaturesOverview />
           </div>
           <div className="m-4 my-10">
             <BetaProgram />
           </div>
-          <div className="m-4 my-10">
+          <div className="m-4 my-10 w-full">
             <AboutUs />
           </div>
           <div className="m-4 my-10">

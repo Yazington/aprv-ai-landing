@@ -21,7 +21,7 @@ const features = [
 
 export default function FeaturesOverview() {
   return (
-    <section className="flex flex-col items-center justify-center text-center p-8 text-white">
+    <section className="flex flex-col items-center justify-center text-center p-8 text-white bg-gray-900">
       <h1 className="text-2xl font-semibold mb-8 text-center">
         Features Overview
       </h1>

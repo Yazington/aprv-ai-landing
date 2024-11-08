@@ -27,7 +27,7 @@ export default function Challenges() {
   return (
     <section
       id={"challenges"}
-      className="flex flex-1 relative text-white flex-col items-center justify-center"
+      className="flex flex-1 basis-[100%] relative text-white flex-col items-center justify-center bg-gray-900 p-5 w-full"
     >
       <h1 className="text-2xl font-semibold mb-8 text-center">
         Common Challenges in Brand Licensing Management

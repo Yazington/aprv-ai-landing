@@ -26,23 +26,23 @@ const HowItWorks = () => {
   ];
 
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center gap-8 p-8">
+    <div className="flex flex-col md:flex-row justify-center items-center gap-8 p-8 bg-gray-900 min-h-[500px]">
       {steps.map((step, index) => (
         <div
           key={index}
-          className="flex flex-1 flex-col text-center justify-center items-center"
+          className="flex flex-1 flex-col text-center justify-center items-center "
         >
-          <div className="flex flex-1 justify-center items-center">
+          <div className="flex flex-1 justify-center items-center ">
             <div className="flex items-center justify-center w-16 h-16 rounded-full bg-green-500 text-white font-bold text-2xl mb-4">
               {step.number}
             </div>
           </div>
-          <div className="flex flex-1 justify-center items-center">
+          <div className="flex flex-1 justify-center items-center ">
             <h3 className="text-lg font-semibold mb-2 text-white ">
               {step.title}
             </h3>
           </div>
-          <div className="h-[150px]">
+          <div className="sm:h-150 h-100 justify-center items-center text-center">
             <p className="text-gray-600">{step.description}</p>
           </div>
         </div>

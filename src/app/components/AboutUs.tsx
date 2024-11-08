@@ -4,7 +4,7 @@ export default function AboutUs() {
   return (
     <section
       id="about"
-      className="flex flex-col items-center justify-center p-8 text-white"
+      className="flex flex-col items-center justify-center p-8 text-white bg-gray-900"
     >
       <h1 className="text-3xl font-semibold mb-4 text-center">About Us</h1>
       <p className="text-center text-gray-300 max-w-3xl leading-relaxed">
