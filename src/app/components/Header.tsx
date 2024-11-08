@@ -44,7 +44,7 @@ export default function Header() {
           0 3.5px 6px hsla(0, 0%, 0%, 0.09)
         `,
       }}
-      className="bg-gray-900 bg-opacity-30 backdrop-filter backdrop-blur-sm fixed top-4 left-1/2 transform -translate-x-1/2 z-50 p-3 flex justify-between items-center rounded-full sm:w-full md:w-2/3 lg:w-1/2 w-[95%]"
+      className="bg-gray-900 bg-opacity-30 backdrop-filter backdrop-blur-sm fixed top-4 left-1/2 transform -translate-x-1/2 z-50 p-3 flex  items-center rounded-full sm:w-full md:w-2/3 lg:w-1/2 w-[95%] justify-center sm:justify-between"
     >
       <div className="flex basis-3/12 items-center gap-8 p-6 m-2">
         <Image
@@ -62,7 +62,7 @@ export default function Header() {
           className="block sm:hidden" // Display this on smaller than small screens
         />
       </div>
-      <nav className="text-white flex  gap-2  m-2 p-6">
+      <nav className="text-white flex flex-col sm:flex-row justify-center items-center  gap-2  m-2 p-2">
         <a href="#challenges">Challenges</a>
         <a href="#features">Features</a>
         <a href="#about">About Us</a>
