@@ -21,15 +21,15 @@ const features = [
 
 export default function FeaturesOverview() {
   return (
-    <section className="flex flex-col items-center justify-center p-8 text-white">
+    <section className="flex flex-col items-center justify-center text-center p-8 text-white">
       <h1 className="text-2xl font-semibold mb-8 text-center">
         Features Overview
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 items-center justify-center text-center">
         {features.map((feature, index) => (
           <div
             key={index}
-            className="bg-black bg-opacity-10 backdrop-filter backdrop-blur-lg p-6 rounded-lg shadow-lg"
+            className="bg-black bg-opacity-10 backdrop-filter backdrop-blur-lg p-6 rounded-lg shadow-lg items-center justify-center text-center h-[120px] min-h-0 md:min-h-[300px] xl:min-h-[200px]"
             style={{
               boxShadow: `
               inset 0 0 0.5px 1px hsla(0, 0%, 100%, 0.3),
@@ -40,7 +40,7 @@ export default function FeaturesOverview() {
             `,
             }}
           >
-            <h2 className="text-lg font-medium mb-2">{feature.title}</h2>
+            <h2 className="text-lg mb-2 font-bold">{feature.title}</h2>
             <p className="text-gray-300">{feature.description}</p>
           </div>
         ))}

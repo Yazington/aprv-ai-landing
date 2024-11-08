@@ -61,7 +61,7 @@ export default function HeroSection() {
   }, [fullTitle, fullDescription]);
 
   return (
-    <section className="flex flex-1 relative text-white p-40 m-40 text-center hero-section-interactive justify-center items-center">
+    <section className="flex flex-1 relative text-white pt-60 text-center hero-section-interactive justify-center items-center">
       <div className="relative z-10 ">
         <h2
           className="text-4xl font-extrabold mb-4 hero-title "

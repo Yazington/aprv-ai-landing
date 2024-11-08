@@ -40,7 +40,7 @@ export default function FAQSection() {
       </h1>
       <div className="w-full max-w-2xl">
         {faqs.map((faq, index) => (
-          <div key={index} className="border-b border-gray-700 min-w-[800px]">
+          <div key={index} className="border-b border-gray-700">
             <button
               className="w-full text-left py-4 flex justify-between items-center"
               onClick={() => toggleAccordion(index)}

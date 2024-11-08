@@ -12,7 +12,6 @@ const InteractiveBackground = () => {
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
-    // const dotSize = 4;
     const spacing = 20;
     const canvasWidth = document.documentElement.scrollWidth;
     const canvasHeight = document.documentElement.scrollHeight;
@@ -57,7 +56,7 @@ const InteractiveBackground = () => {
 
     // Update opacity of dots based on distance to mouse
     dotsRef.current.forEach(({ x, y }) => {
-      const distance = Math.sqrt((x - mouseX) ** 2 + (y - mouseY) ** 2);
+      const distance = Math.hypot(x - mouseX, y - mouseY);
       const opacity = distance < radius ? 1 - distance / radius : 0;
       if (opacity > 0) {
         ctx.fillStyle = `rgba(128, 128, 128, ${opacity})`;
@@ -77,7 +76,15 @@ const InteractiveBackground = () => {
       updateDotsNearMouse(mouseX, mouseY);
     };
 
+    const handleTouchMove = (event: TouchEvent) => {
+      const touch = event.touches[0];
+      const mouseX = touch.pageX;
+      const mouseY = touch.pageY;
+      updateDotsNearMouse(mouseX, mouseY);
+    };
+
     window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("touchmove", handleTouchMove);
 
     const handleResize = () => {
       initializeCanvas();
@@ -92,6 +99,7 @@ const InteractiveBackground = () => {
 
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("touchmove", handleTouchMove);
       window.removeEventListener("resize", handleResize);
       if (resizeObserverRef.current) {
         resizeObserverRef.current.disconnect();
