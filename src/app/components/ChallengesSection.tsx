@@ -36,7 +36,7 @@ export default function Challenges() {
         {challenges.map((challenge, index) => (
           <div
             key={index}
-            className="bg-gray-900 bg-opacity-30 backdrop-filter backdrop-blur-sm p-6 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 backdrop-brightness-200"
+            className="bg-gray-900 bg-opacity-30 backdrop-filter backdrop-blur-sm p-6 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 backdrop-brightness-200 max-w-[500px]"
             style={{
               boxShadow: `
               inset 0 0 0.5px 1px hsla(0, 0%,  100%, 0.3),

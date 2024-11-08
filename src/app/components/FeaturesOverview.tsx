@@ -29,7 +29,7 @@ export default function FeaturesOverview() {
         {features.map((feature, index) => (
           <div
             key={index}
-            className="bg-black bg-opacity-10 backdrop-filter backdrop-blur-lg p-6 rounded-lg shadow-lg items-center justify-center text-center h-[120px] min-h-0 md:min-h-[300px] xl:min-h-[200px]"
+            className="flex flex-1 flex-col bg-black bg-opacity-10 backdrop-filter backdrop-blur-lg p-6 rounded-lg shadow-lg items-center justify-center text-center h-[120px] min-h-0 md:min-h-[300px] xl:min-h-[200px]"
             style={{
               boxShadow: `
               inset 0 0 0.5px 1px hsla(0, 0%, 100%, 0.3),

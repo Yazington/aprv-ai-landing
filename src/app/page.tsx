@@ -20,32 +20,34 @@ export default function Home() {
       <div className="flex flex-1 relative z-10 flex-col min-h-screen justify-center items-center">
         <Header />
         <main className="flex flex-col justify-center items-center w-[95%] xl:w-[85%]">
-          <HeroSection />
-          <div className="m-4 my-40">
+          <div className="m-4 my-32">
+            <HeroSection />
+          </div>
+          <div className="m-4 my-10">
             <Challenges />
           </div>
-          <div className="m-4 my-40">
+          <div className="m-4 my-10">
             <Product />
           </div>
-          <div className="m-4 my-40">
+          <div className="m-4 my-10">
             <HowItWorks />
           </div>
-          <div className="m-4 my-40">
+          <div className="m-4 my-10">
             <KeyBenefits />
           </div>
-          <div className="m-4 my-40">
+          <div className="m-4 my-10">
             <FeaturesOverview />
           </div>
-          <div className="m-4 my-40">
+          <div className="m-4 my-10">
             <BetaProgram />
           </div>
-          <div className="m-4 my-40">
+          <div className="m-4 my-10">
             <AboutUs />
           </div>
-          <div className="m-4 my-40">
+          <div className="m-4 my-10">
             <FAQSection />
           </div>
-          {/* <div className="m-4 my-40">
+          {/* <div className="m-4 my-10">
             <Custom />
           </div> */}
         </main>
